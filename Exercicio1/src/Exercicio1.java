@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Exercicio1 {
 	public static void main(String[] args) {
-		Scanner teclado = new Scanner(System.in);
+	Scanner teclado = new Scanner(System.in);
 		double nota1, nota2, media;
 		System.out.println("Por favor, digite sua primeira nota");
 		nota1 = teclado.nextDouble();
