@@ -9,7 +9,10 @@ public class AppEbook {
 		System.out.println("A página atual é: " + e1.getPagAtual());
 
 		e1.avancarPag();
+		System.out.println("A página atual é: " + e1.getPagAtual());
+
 		e1.voltarPag();
+		System.out.println("A página atual é: " + e1.getPagAtual());
 
 	}
 }

@@ -1,39 +1,41 @@
 
 public class Funcionario {
 	private String nome;
-	private double horasTrabalhadas, valorHoraTrabalhada;
-	
-	public Funcionario(String nome, double horasTrabalhadas, double valorHoraTrabalhada) {
+	private int horasTrabalhadas;
+	private double valorDaHoraTrabalhada;
+
+	public Funcionario(String nome, int horasTrabalhadas, double valorDaHoraTrabalhada) {
+		super();
 		this.nome = nome;
 		this.horasTrabalhadas = horasTrabalhadas;
-		this.valorHoraTrabalhada = valorHorasTrabalhadas;
+		this.valorDaHoraTrabalhada = valorDaHoraTrabalhada;
 	}
-	
-	public void setHorasTrabalhadas() {
-		
-	}
-	
-	public void setValorHorasTrabalhadas() {
-		
-	}
-	
+
 	public String getNome() {
 		return nome;
 	}
-	
-	public double getHorasTrabalhadas() {
+
+	public int getHorasTrabalhadas() {
 		return horasTrabalhadas;
 	}
-	
-	public double getValorHoraTrabalhada() {
-		return valorHoraTrabalhada;
-	}
-	t
-	
-	
-	public double getSalario() {
-		
-	}
-	
 
+	public void setHorasTrabalhadas(int horasTrabalhadas) {
+		this.horasTrabalhadas = horasTrabalhadas;
+	}
+
+	public double getValorDaHoraTrabalhada() {
+		return valorDaHoraTrabalhada;
+	}
+
+	public void setValorDaHoraTrabalhada(double valorDaHoraTrabalhada) {
+		this.valorDaHoraTrabalhada = valorDaHoraTrabalhada;
+	}
+
+	public double calcularSalario() {
+		return valorDaHoraTrabalhada * horasTrabalhadas;
+	}
+
+	public String exibir() {
+		return nome + "- " + valorDaHoraTrabalhada + " - " + horasTrabalhadas;
+	}
 }

@@ -8,7 +8,7 @@ public class Ebook {
 	public Ebook(String titulo, String autor, int totalPag, int pagAtual) {
 		this.titulo = titulo;
 		this.autor = autor;
-		if (totalPag >= 0 && totalPag <= totalPag) {
+		if (totalPag >= 0 && pagAtual <= totalPag) {
 			this.totalPag = totalPag;
 			this.pagAtual = pagAtual;
 
@@ -29,12 +29,10 @@ public class Ebook {
 
 	public void avancarPag() {
 		pagAtual++;
-		System.out.println("A próxima página é: " + pagAtual);
 	}
 
 	public void voltarPag() {
 		pagAtual--;
-		System.out.println("a página anterior é: " + pagAtual);
 	}
 
 }
