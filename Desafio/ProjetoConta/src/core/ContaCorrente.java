@@ -13,17 +13,16 @@ public class ContaCorrente extends Conta {
 			return super.sacar(valor);
 		} else {
 			System.out.println("Não é possível realizar a operação!");
-		} return getSaldo();
+		}
+		return getSaldo();
 	}
 
 	@Override
 	public double depositar(double valor) {
 		if (valor > 0) {
-		return super.depositar(valor);
+			return super.depositar(valor);
 		} else {
 			return 0;
 		}
-		}
 	}
-
-
+}

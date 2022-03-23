@@ -32,4 +32,9 @@ public abstract class Conta {
 		return saldo;
 	}
 
+	@Override
+	public String toString() {
+		return numero + " - " + saldo;
+	}
+
 }
