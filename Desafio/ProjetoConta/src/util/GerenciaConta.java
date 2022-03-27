@@ -43,4 +43,25 @@ public class GerenciaConta {
 		}
 		return false;
 	}
+	
+	public boolean sacar(int numero, double valorASacar) {
+        for (int i = 0; i < contas.size(); i++) {
+                if (contas.get(i).getNumero() == numero) {
+                        contas.get(i).sacar(valorASacar);
+                        ;
+                        return true;
+                }
+        }
+        return false;
+	}
+
+	public boolean depositar(int numero, double valorADepositar) {
+        for (int i = 0; i < contas.size(); i++) {
+                if (contas.get(i).getNumero() == numero) {
+                        contas.get(i).depositar(valorADepositar);
+                        return true;
+                }
+        }
+        return false;
+}
 }

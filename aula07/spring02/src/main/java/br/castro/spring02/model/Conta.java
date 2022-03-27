@@ -1,4 +1,4 @@
-package core;
+package br.castro.spring02.model;
 
 public abstract class Conta {
 	private int numero;
@@ -18,7 +18,7 @@ public abstract class Conta {
 		return saldo;
 	}
 
-	public void exibir() {
+	public void mostrarDados() {
 		System.out.println(numero + " - " + saldo);
 	}
 

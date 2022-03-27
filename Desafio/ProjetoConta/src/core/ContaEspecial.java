@@ -11,7 +11,7 @@ public class ContaEspecial extends Conta {
 	@Override
 	public double sacar(double valor) {
 		double disponivel = limite + getSaldo();
-		if (valor >= -limite && valor <= disponivel) {
+		if (valor > 0 && valor <= disponivel) {
 			return super.sacar(valor);
 		} else {
 			return getSaldo();
